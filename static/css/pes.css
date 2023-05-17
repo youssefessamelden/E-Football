@@ -1,0 +1,1702 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #222;
+}
+
+/* scroll */
+
+.scroll{
+    height: 7vh;
+    width: 5vw;
+    border-radius: 5px;
+    background-color: #0b22d8;
+    color: burlywood;
+    position: fixed;
+    right: 10px;
+    bottom: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+/* ////////////////customize//////////////// */
+
+.custmozebutton{
+    position: fixed;
+    left: 200px;
+    width: 7vw;
+    top: 35%;
+    border: 2px solid rgba(0, 0, 0, 10%);
+    background: #065fd4;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 2.5s 1.5s;
+}
+
+.custmozebutton button{
+    border: none;
+    background: transparent;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.custmozebutton i{
+    color: #ff0;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translate(0 , -50%);
+}
+
+.custmize{
+    position: fixed;
+    left:0;
+    display: flex;
+    height: 100%;
+    width:21vw;
+    z-index: 100;
+    background-color: #065fd4;
+    transition: all 3s ;
+}
+
+
+.custmize .customize-pa{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    align-items: center;
+}
+
+.custmize .customize-pa .head{
+    display: flex;
+    border-bottom: 3px solid rgba(0, 0, 0, 10%);
+    width: 100%;
+}
+
+.custmize .customize-pa .head .cust-sp{
+    font-size: 18px;
+    padding: 20px;
+}
+
+
+.custmize .customize-pa .head #closecustomize{
+    cursor: pointer;
+    position: absolute;
+    top: 19px;
+    right: 30px;
+    border: 2px solid #9e9e9e;
+    padding: 2px 5px;
+    color: #9e9e9e;
+    display: none;
+}
+
+.custmize .customize-pa .customize-p{
+    padding-left: 20px;
+    margin-top: 3%;
+}
+
+.custmize .customize-pa .customize-p2{
+    padding-left: 20px;
+    font-size: 1.2em;
+}
+
+.custmize .customize-pa .colordefult{
+    display: flex;
+    margin-bottom: 3%;
+    width: 100%;
+}
+
+.custmize .customize-pa .defult{
+    border: none;
+    position: absolute;
+    right: 4px;
+    background: transparent;
+    color: #ff0;
+    cursor: pointer;
+}
+
+.custmize .customize-pa .defult:focus{
+    color: rgba(0, 0, 0, 10%);
+    cursor: not-allowed;
+}
+
+.custmize .customize-pa .default-color{
+    margin: auto;
+    width: 90%;
+    padding: 12px 2px;
+    border: 2px solid rgba(0, 0, 0, 10%);
+    background: transparent;
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.custmize .customize-pa .default-color:focus{
+    border: 2px solid #ff0;
+    color: #ff0;
+}
+
+.custmize .customize-pa .default-color span{
+    padding-left: 4px;
+    font-size: 0.8em;
+}
+
+.custmize .customize-pa .default-color .boxcolor-1{
+    display: flex;
+    gap: 3px;
+    margin-left: 20px;
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+}
+
+.custmize .customize-pa .boxs{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin:2% auto;
+    justify-content: space-between;
+    border-bottom: 2px solid rgba(0, 0, 0, 10%);
+    padding-bottom: 2%;
+}
+
+.custmize .customize-pa .boxs .boxcolor-2{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin: 4% 0;
+    width: 10vw;
+    padding: 5px 2px;
+    border: 2px solid rgba(0, 0, 0, 10%);
+    height: 4vh;
+    display: flex;
+    align-items: center;
+    width: 8vw;
+}
+
+.custmize .customize-pa .boxs .boxcolor-2 .color{
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.boxcolor-2 .color:focus{
+    border: 3px solid #ff0;
+}
+/*////////////////////// End of customizer for boxs////////////////// */
+.font{
+    display: flex;
+    flex-direction: column;
+}
+
+.font .fonthead .try{
+    font-size: 16px;
+    padding-left: 20px;
+}
+
+.font .fonthead{
+    position: relative;
+}
+
+.font .fonthead button{
+    border: none;
+    background: transparent;
+    position: absolute;
+    right: 35px;
+    top: 50%;
+    transform: translate(0 , -50%);
+    color: #ff0;
+    cursor: pointer;
+}
+
+.font .fonthead button:focus{
+    color: rgba(0, 0, 0, 10%);
+    cursor: not-allowed;
+}
+
+.font .popp button{
+    display: flex;
+    border: 2px solid rgba(0, 0, 0, 10%);
+    width: 18vw;
+    margin: 5% 6%;
+    align-items: center;
+    justify-content: center;
+    padding: 4% 0;
+    cursor: pointer;
+    background: transparent;
+}
+
+.font .popp button:focus{
+    border: 2px solid #ff0;
+    color: #ff0;
+}
+
+.font .fontboxs{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    gap: 6px;
+    justify-content: center;
+}
+
+.font .fontboxs button{
+    width: 4vw;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    background: transparent;
+    font-size: 1.3em;
+    cursor: pointer;
+}
+
+.font .fontboxs button:focus{
+    border: 2px solid #ff0;
+    color: #ff0;
+}
+/* //////////////////////////////////// */
+.header{
+    display: flex;
+    justify-content: space-between;
+    background: radial-gradient(#93f014, #251ec6 );
+    background: linear-gradient(180deg, #b7e30b, #0b22d8);
+    animation: head 2s  infinite ;
+}
+
+@keyframes head{
+    0%{
+        background: linear-gradient(180deg, #b7e30b, #0b22d8);
+    }
+
+    20%{
+        background: linear-gradient(300deg, #b7e30b, #0b22d8);
+    }
+
+    40%{
+        background: linear-gradient(0deg, #b7e30b, #0b22d8);
+    }
+
+    60%{
+        background: linear-gradient(90deg, #b7e30b, #0b22d8);
+    }
+
+    80%{
+        background: radial-gradient(#93f014, #251ec6 );
+    }
+
+    100%{
+        background: linear-gradient(180deg, #b7e30b, #0b22d8);
+    }
+}
+
+.icon{
+    display: flex;
+    width: 15vw;
+    margin: 1%;
+    cursor: pointer;
+}
+
+.icon:hover{
+    animation: icon 1s forwards 0.5s;
+    animation-iteration-count: 1;
+    z-index: 100;
+}
+
+@keyframes icon{
+    0%{
+        transform: rotatex(45deg);
+    }
+
+    30%{
+        transform: rotatex(90deg);
+    }
+
+    50%{
+        transform: rotatex(180deg);
+    }
+
+    75%{
+        transform: rotatex(270deg); 
+    }
+
+    100%{
+        transform: rotatex(360deg);
+    }
+
+}
+
+#icon{
+    width: 8vw;
+    height: 15vh;
+    margin: 1%;
+}
+
+#E{
+    text-align: center;
+    justify-content: center;
+    margin-top: 19%;
+    font-size: 1.46em;
+}
+
+#theme{
+    text-align: center;
+    background: coral;
+    color: blue;
+    width: 10vw;
+    height: 10vh;
+    border-radius: 25px;
+    cursor: pointer;
+    padding: 1% 0;
+    font-size: 1.2em;
+    margin-top: 2.5%;
+    margin-right: 1%;
+}
+
+#mode{
+    text-align: center;
+    background: coral;
+    color: blue;
+    width: 10vw;
+    height: 10vh;
+    border-radius: 25px;
+    /* border: none; */
+    cursor: pointer;
+    padding: 1% 0;
+    font-size: 1.2em;
+    margin-top: 2.5%;
+    margin-right: 1%;
+}
+
+h1{
+    justify-content: center;
+    margin:auto ;
+    border-radius: 50rem;
+    border: 2px solid red;
+    background-color: coral;
+    color: blue;
+    font-size: 3em;
+    width: 20vw;
+    text-align: center;
+    padding: 1% 0;
+    margin-top: 2%;
+}
+
+.nav{
+    display: flex;
+    width: 95%;
+    text-align: center;
+    margin: auto;
+    position: relative;
+    top: 10px;
+    margin-bottom: 7%;
+    z-index: 50;
+}
+
+.background{
+    height: 55vh;
+    width: 100%;
+    margin: auto;
+    align-items: center;
+    display: flex;
+    margin-top: 6%;
+    margin-bottom: 2%;
+}
+
+#ser{
+    text-align: center;
+    background: coral;
+    color: #222;
+    width: 30%;
+    border-radius: 25px;
+    cursor: pointer;
+    padding: 1% 0;
+    font-size: 2em;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    list-style: none;
+}
+
+#ser a{
+    text-decoration: none;
+    color: #222;
+}
+
+.menues{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#btn{
+    text-align: center;
+    background: coral;
+    color: #222;
+    width: 30%;
+    border-radius: 25px;
+    cursor: pointer;
+    padding: 1% 0;
+    font-size: 2em;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.menue{
+    text-align: center;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    padding: 1% 0;
+    position: absolute;
+    top: 72px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 30%;
+    list-style: none;
+    display: none;
+    margin-bottom: 2%;
+    transition: 0.5s;
+}
+
+.menue li{
+    background-color: blueviolet;
+    margin-bottom: 3%;
+    border-radius: 25px;
+    padding: 5% 0;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+    box-sizing: border-box;
+    z-index: 100;
+}
+
+.goals{
+    display: flex;
+    flex-direction: column;
+}
+
+#ps{
+    text-align: center;
+    background: coral;
+    color: #222;
+    width: 30%;
+    border-radius: 25px;
+    cursor: pointer;
+    padding: 1% 0;
+    font-size: 2em;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+#goals{
+    text-align: center;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    padding: 1% 0;
+    position: absolute;
+    top: 72px;
+    right: 20px;
+    width: 30%;
+    list-style: none;
+    display: none;
+    transition: 0.5s;
+}
+
+#goals li{
+    background-color: blueviolet;
+    margin-bottom: 3%;
+    border-radius: 25px;
+    padding: 5% 0;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+.p1 {
+    text-align: center;
+    color: floralwhite;
+    font-size: 2rem;
+    
+}
+
+.p2 {
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    text-align: center;
+    color: floralwhite;
+    font-size: 2rem;
+}
+
+.butn{
+    background-color: rgba(255, 0, 0, 0.337);
+    border-radius: 50rem;
+    display: block;
+    margin: auto;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    padding: 1% 1%;
+    cursor: pointer;
+}
+
+.butn a{
+    color: blueviolet;
+    text-decoration: none;
+    font-size: 3em;
+}
+
+.a1{
+    font-size: 35px;
+    color: rgb(174, 0, 255);
+    text-decoration: none;
+}
+
+.h2{
+    background-color: blue;
+    padding: 15px 0px;
+    border: 2px solid;
+    text-align: center;
+    color: burlywood;
+    font-size: 4em;
+    margin: auto;
+    margin-top: 2%;
+    width: 28vw;
+    border-radius: 20rem;
+    margin-bottom: 0%;
+}
+
+.h3 {
+    background-color: yellow;
+    padding: 5px 0px;
+    border: 2px solid;
+    text-align: center;
+    color: red;
+    font-size: 2.7em;
+    margin: auto;
+    margin-top: 2%;
+    width: 20vw;
+    border-radius: 20rem;
+    margin-bottom: 2%;
+}
+
+.h4{
+    background-color: yellow;
+    padding: 5px 0px;
+    border: 2px solid;
+    text-align: center;
+    color: red;
+    font-size: 2.7em;
+    margin: auto;
+    margin-top: 2%;
+    width: 25vw;
+    border-radius: 20rem;
+    margin-bottom: 2%;
+}
+
+.div {
+    text-align: center;
+}
+
+.img {
+    width: 40vw;
+    height: 55vh;
+    margin: auto;
+    margin-bottom: 2%;
+    border: 2px solid blue;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    
+}
+
+.ifr {
+    width: 40vw;
+    height: 60vh;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 3%;
+}
+
+.hr {
+    height: 0.8vh;
+    background-color: darkblue;
+    margin-top: 0%;
+}
+
+.ifr-2{
+    width: 80vw;
+    height: 75vh;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 3%;
+}
+
+.hide{
+    display: none;
+}
+
+
+
+
+
+
+
+@media(max-width:1490px){
+    .custmize{
+        width: 28vw;
+    }
+
+    .custmozebutton{
+        width: 10vw;
+    }
+
+    .custmozebutton {
+        width: 13vw;
+    }
+
+    .custmize .customize-pa .boxs .boxcolor-2 {
+        width: 11vw;
+        margin: 2% 0;
+    }
+
+    .font .popp button{
+        width: 24vw;
+    }
+
+    .font .fontboxs button {
+        width: 6vw;
+        height: 5vh;
+        line-height: 2vh;
+    }
+
+    .icon{
+        width: 17vw;
+    }
+
+    .icon #icon{
+        height: 12vh;
+    }
+
+    h1{
+        margin-top: 1%;
+    }
+
+    #theme{
+        margin-top: 2%;
+    }
+
+    #mode{
+        margin-top: 2%;
+        font-size: 1.18em;
+    }
+
+    .background{
+        margin-top: 7%;
+    }
+
+    .h2{
+        width: 32vw;
+    }
+
+    .h3{
+        width: 22vw;
+        padding: 10px 0px;
+    }
+
+    .h4{
+        width: 32vw;
+        padding: 10px 0px;
+    }
+}
+
+@media(max-width:1200px){
+    .custmize{
+        width: 31vw;
+    }
+
+    .custmize .customize-pa .boxs .boxcolor-2 {
+        width: 13vw;
+    }
+
+    .font .popp button{
+        width: 27vw;
+    }
+
+    .icon{
+        width: 19vw;
+    }
+
+    .background{
+        margin-top: 8%;
+    }
+
+    .h2{
+        width: 36vw;
+    }
+
+    .h3{
+        width: 24vw;
+    }
+
+    .h4{
+        width: 40vw;
+    }
+}
+
+@media(max-width:1055px){
+    .custmozebutton{
+        width: 11vw;
+    }
+
+    .icon #icon{
+        height: 9vh;
+    }
+
+    .icon #E{
+        margin-top: 15%;
+    }
+
+    h1{
+        height: 6vh;
+        line-height: 4vh;
+    }
+    #theme{
+        width: 12vw;
+        height: 9vh;
+        margin-top: 1%;
+    }
+
+    #mode{
+        width: 13vw;
+        height: 9vh;
+        margin-top: 1%;
+    }
+
+    .img{
+        width: 50vw;
+        height: 40vh;
+    }
+
+    .ifr{
+        width: 80vw;
+        height: 35vh;
+    }
+
+    .ifr-2{
+        width: 80vw;
+        height: 35vh;
+    }
+
+    .scroll{
+        width: 8vw;
+        height: 6vh;
+    }
+}
+
+@media(max-width:1000px){
+    .custmize{
+        width: 31vw;
+    }
+
+    .custmozebutton {
+        width: 13vw;
+        padding: 10px 2px;
+    }
+
+    .custmize .customize-pa .boxs .boxcolor-2 {
+        width: 12vw;
+    }
+
+    .font .popp button{
+        width: 26vw;
+    }
+    
+    .icon{
+        width: 21vw;
+    }
+
+    #theme{
+        font-size: 1em;
+        width: 11vw;
+    }
+
+    #mode{
+        font-size: 1em;
+        width: 12vw;
+    }
+
+    .background{
+        margin-top: 9%;
+    }
+
+    .h2{
+        width: 42vw;
+    }
+
+    .h3{
+        width: 31vw;
+    }
+
+    .h4{
+        width: 50vw;
+    }
+}
+
+@media(max-width:920px){
+    .custmize{
+        width: 35vw;
+    }
+
+    .custmozebutton {
+        width: 13vw;
+        padding: 10px 2px;
+    }
+
+    .custmize .customize-pa .boxs .boxcolor-2 {
+        width: 13vw;
+    }
+
+    .font .fontboxs button {
+        width: 10vw;
+        height: 7vh;
+        line-height: 5vh;
+        margin: 4px 0;
+    }
+
+    .custmize .customize-pa .boxs .boxcolor-2 {
+        width: 14vw;
+        margin: 20px 0;
+    }
+}
+
+@media(max-width:793px){
+    .font .fontboxs button {
+        width: 10vw;
+        height: 7vh;
+        line-height: 5vh;
+        margin: 4px 0;
+    }
+
+    .custmize{
+        width: 37vw;
+    }
+
+    .custmozebutton {
+        width: 14vw;
+    }
+
+    .custmize .customize-pa .boxs .boxcolor-2 {
+        width: 15vw;
+        margin: 20px 0;
+    }
+
+    .font .popp button{
+        width: 30vw;
+    }
+
+    .icon #E{
+        font-size: 1.28em;
+    }
+
+    .icon #icon{
+        height: 9vh;
+    }
+
+    .icon #E {
+        margin-top: 15%;
+        }
+
+    #theme{
+        height: 9vh;
+    }
+
+    #mode{
+        height: 9vh;
+    }
+
+    .background{
+        margin-top: 10%;
+    }
+
+    .h2{
+        width: 48vw;
+    }
+
+    .h3{
+        width: 35vw;
+    }
+
+    .h4{
+        width: 51vw;
+    }
+
+    .img{
+        width: 55vw;
+    }
+}
+
+@media(max-width:699px){
+    .icon{
+        width: 25vw;
+    }
+
+    .icon #E{
+        font-size: 1em;
+    }
+
+    .icon #icon{
+        width: 12vw;
+    }
+
+    #theme{
+        margin-top: 3%;
+        font-size: 1em;
+        width: 14vw;
+        height: 6vh;
+    }
+
+    #mode{
+        margin-top: 3%;
+        font-size: 1em;
+        width: 15vw;
+        height: 6vh;
+    }
+
+    .background{
+        margin-top: 14%;
+    }
+
+    .h2{
+        width: 58vw;
+    }
+
+    .h3{
+        width: 42vw;
+    }
+
+    .h4{
+        width: 62vw;
+    }
+
+    #ser{
+        width: 33%;
+        left: -6px;
+        padding: 2% 0;
+    }
+
+    #btn{
+        width: 33%;
+        padding: 2% 0;
+    }
+
+    #ps{
+        width: 34%;
+        right: -12px;
+        padding: 2% 0;
+    }
+
+    .menue{
+        width: 33%;
+        top: 74px;
+    }
+
+    #goals{
+        width: 34%;
+        right: -12px;
+        top: 60px;
+    }
+
+    .scroll{
+        width: 7vw;
+        height: 5vh;
+    }
+
+    .ifr{
+        height: 60vh;
+    }
+
+    .ifr-2{
+        height: 60vh;
+    }
+}
+
+@media(max-width:572px){
+    .icon {
+        width: 27vw;
+    }
+
+    .icon #E {
+        font-size: 0.87em;
+    }
+
+    h1 {
+        margin: 1% 0;
+        font-size: 2.5em;
+        height: 8vh;
+    }
+
+    #theme{
+        width: 19vw;
+        margin-right: -16px;
+    }
+
+    #mode{
+        width: 21vw;
+    }
+
+    #ser{
+        font-size: 1.4em;
+    }
+
+    #btn{
+        font-size: 1.4em;
+    }
+
+    #ps{
+        font-size: 1.4em;
+    }
+
+    .menue{
+        top: 54px;
+        font-size: .78em;
+    }
+
+    #goals{
+        top: 54px;
+        font-size: .78em;
+    }
+
+    .h2 {
+        width: 83vw;
+    }
+
+    .h3 {
+        width: 56vw;
+    }
+
+    .h4 {
+        width: 88vw;
+    }
+}
+
+
+@media(max-width:415px){
+    .custmize .customize-pa .head .cust-sp {
+        font-size: 18px;
+        padding: 2px 10px;
+    }
+
+    .custmize {
+        width: 40vw;
+        overflow-y: scroll;
+    }
+
+    .custmize .customize-pa .default-color span {
+        padding-left: 4px;
+        font-size: 0.1rem;
+        width: 100%;
+    }
+
+    .custmize .customize-pa .default-color {
+        height: 2vh;
+    }
+
+    .custmize .customize-pa .customize-p {
+        padding-left: 10px;
+        margin: 2% 0;
+        font-size: 0.7rem;
+    }
+
+    .font .fonthead button{
+        right: -8px;
+    }
+
+    .font .fonthead .try {
+        font-size: 0.8rem;
+        padding-left: 10px;
+    }
+
+    .custmize .customize-pa .customize-p2 {
+        padding-left: 10px;
+        font-size: 0.8em;
+    }
+
+    .font .fontboxs button {
+        width: 8vw;
+        height: 4vh;
+        line-height: 2vh;
+        margin: 1px 0;
+    }
+
+    .custmozebutton {
+        width: 20vw;
+        left: 70px;
+        padding: 10px 20px;
+    }
+
+    .custmozebutton button {
+        font-size: 0.7rem;
+    }
+
+    .custmize .customize-pa .boxs .boxcolor-2 {
+        width: 30vw;
+        margin: 5px 0;
+    }
+
+    .font .popp button{
+        width: 32vw;
+    }
+
+    .icon{
+        width: 14vh;
+    }
+
+    .icon #E{
+        font-size: 0.88em;
+        margin-top: 25%;
+    }
+
+    .icon #icon{
+        width: 15vw;
+        height: 7vh;
+    }
+
+    h1{
+        margin-top: 2%;
+        border-radius: 10px;
+        font-size: 2.5em;
+    }
+
+    #theme{
+        margin-top: 3%;
+        font-size: 0.7em;
+        width: 17vw;
+        height: 5vh;
+        border-radius: 10px;
+    }
+
+    #mode{
+        margin-top: 3%;
+        font-size: 0.7em;
+        width: 17vw;
+        height: 5vh;
+        border-radius: 10px;
+    }
+
+    .background{
+        margin-top: 15%;
+        height: 34vh;
+    }
+
+    .p1{
+        font-size: 1.4em;
+    }
+
+    .butn a{
+        font-size: 2em;
+    }
+
+    .p2{
+        font-size: 1.4em;
+    }
+
+    .h2{
+        width: 58vw;
+        font-size: 2.87em;
+    }
+
+    .h3{
+        width: 42vw;
+        padding: 10px 0px;
+        font-size: 2em;
+    }
+
+    .h4{
+        width: 64vw;
+        padding: 10px 0px;
+        font-size: 2em;
+    }
+
+    .img{
+        width: 77vw;
+        height: 30vh;
+    }
+
+    #ser{
+        border-radius: 10px;
+        font-size: 1.45em;
+    }
+
+    #btn{
+        width: 34%;
+        border-radius: 10px;
+        font-size: 1.45em;
+    }
+
+    #ps{
+        width: 35%;
+        border-radius: 10px;
+        font-size: 1.45em;
+    }
+
+    .menue{
+        width: 34%;
+        top: 55px;
+    }
+
+    .menue li{
+        border-radius: 10px;
+        font-size: 1.45em; 
+    }
+
+    #goals{
+        width: 35%;
+        top: 55px;
+    }
+
+    #goals li{
+        border-radius: 10px;
+        font-size: 1.45em;
+    }
+
+    .scroll{
+        width: 9vw;
+        right: 4px;
+    }
+
+    .ifr{
+        width: 80vw;
+        height: 30vh;
+    }
+
+    .ifr-2{
+        width: 80vw;
+        height: 30vh;
+    }
+}
+
+@media(max-width:405px){
+    #ps{
+        width: 34%;
+        font-size: 1.2rem;
+    }
+
+    #btn {
+        width: 34%;
+        font-size: 1.2rem;
+    }
+
+    h1 {
+        height: 7vh;
+        padding: 0;
+        line-height: 1.6rem;
+    }
+
+    .h2{
+        width: 60vw;
+        font-size: 2.5rem;
+    }
+
+    .h3 {
+        width: 46vw;
+    }
+
+    .icon #icon {
+        width: 12vw;
+        height: 7vh;
+    }
+
+    .icon {
+        width: 30vw;
+    }
+
+    .icon #E {
+        margin-top: 18%;
+    }
+
+    #mode {
+        width: 18vw;
+        height: 6vh;
+    }
+
+    #theme {
+        height: 6vh;
+    }
+
+    .h4 {
+        width: 66vw;
+    }
+}
+
+
+@media(max-width:394px){
+    h1 {
+        margin: 2% 0;
+        height: 5vh;
+        line-height: 2rem;
+    }
+
+    .nav{
+        margin-bottom: 19%;
+    }
+
+    .custmize .customize-pa .boxs .boxcolor-2 {
+        margin: 4px 0;
+    }
+
+    .custmize {
+        width: 42vw;
+    }
+
+    .icon #E{
+        margin-top: 16%;
+    }
+
+    .icon #icon{
+        width: 12vw;
+        height: 6vh;
+    }
+
+    h1{
+        margin: 1% 0;
+        font-size: 2em;
+    }
+
+    #theme{
+        margin-right: -12px;
+        height: 4vh;
+        margin-top: 3%;
+    }
+
+    #mode{
+        width: 18vw;
+        height: 4vh;
+        margin-top: 3%;
+    }
+
+    .h2{
+        width: 60vw;
+        font-size: 2.8em;
+    }
+
+    .h3{
+        width: 45vw;
+    }
+
+    .h4{
+        width: 67vw;
+    }
+
+    #ser{
+        font-size: 1.3em;
+    }
+
+    #btn{
+        font-size: 1.3em;
+    }
+
+    #ps{
+        right: -8px;
+        font-size: 1.3em;
+    }
+
+    .menue li{
+        font-size: 1.3em; 
+    }
+
+    #goals{
+        right: -8px;
+    }
+
+    #goals li{
+        font-size: 1.3em;
+    }
+}
+
+@media(max-width:376px){
+    .custmize .customize-pa .customize-p2 {
+        padding-left: 3px;
+    }
+
+    .custmize {
+        width: 41vw;
+    }
+
+    .font .fonthead button {
+        right: 5px;
+    }
+
+    .custmozebutton {
+        left: 60px;
+    }
+
+    .custmize .customize-pa .boxs .boxcolor-2{
+        padding: 0;
+    }
+
+    .icon{
+        width: 15vh;
+    }
+
+    .icon #E{
+        font-size: 1px;
+    }
+
+    .icon #icon{
+        width: 10vw;
+    }
+
+    h1{
+        font-size: 1.8em;
+    }
+
+    #theme{
+        margin-top: 2%;
+        width: 18vw;
+    }
+
+    #mode{
+        margin-top: 2%;
+        width: 19vw;
+    }
+
+    .h2{
+        width: 64vw;
+    }
+
+    .h3{
+        width: 48vw;
+    }
+
+    .h4{
+        width: 71vw;
+    }
+
+    .menue{
+        top: 48px;
+    }
+
+    #goals{
+        top: 48px;
+    }
+}
+
+@media(max-width:361px){
+    #mode{
+        width: 20vw;
+        margin-top: 3%;
+    }
+
+    #theme{
+        margin-top: 3%;
+        width: 19vw;
+        margin-right: 1%;
+    }
+
+    .h2{
+        width: 66vw;
+    }
+
+    .h3{
+        width: 48vw;
+    }
+
+    .h4{
+        width: 74vw;
+    }
+
+    #ser{
+        font-size: 1.2em;
+    }
+
+    #btn{
+        font-size: 1.2em;
+    }
+
+    #ps{
+        font-size: 1.2em;
+    }
+
+    .menue li{
+        font-size: 1.2em; 
+    }
+
+    #goals li{
+        font-size: 1.2em;
+    }
+}
+
+@media(max-width:321px){
+    .custmize {
+        width: 44vw;
+    }
+    
+    #theme {
+        width: 21vw;
+        font-size: 1px;
+    }
+
+    #mode{
+        width: 22vw;
+        margin-left: 3%;
+    }
+
+    h1 {
+        font-size: 1.2em;
+        width: 16vw;
+        height: 4vh;
+        margin-top: 2%;
+    }
+
+    #ser{
+        font-size: 1em;
+    }
+
+    #btn{
+        font-size: 1em;
+    }
+
+    #ps{
+        font-size: 1em;
+    }
+
+    .menue {
+        top: 44px;
+    }
+
+    .menue li{
+        font-size: 1em; 
+    }
+
+    #goals {
+        top: 44px;
+    }
+
+    #goals li{
+        font-size: 1em;
+    }
+
+    .h2 {
+        width: 77vw;
+    }
+
+    .h3 {
+        width: 58vw;
+    }
+
+    .h4 {
+        width: 86vw;
+    }
+}
+
+@media(max-width: 285px){
+    #theme{
+        width: 25vw;
+        margin-right: -9px;
+    }
+
+    #mode{
+        width: 27vw;
+    }
+
+    .icon #icon {
+        height: 8vh;
+    }
+
+    #btn {
+        font-size: 0.92em;
+    }
+
+    #ps {
+        font-size: 0.91em;
+    }
+
+    .h2{
+        font-size: 2.4em;
+    }
+    
+    .h3 {
+        width: 70vw;
+    }
+
+    .h4{
+        font-size: 1.72em;
+    }
+}
+
+
+
+
+@media(max-height: 481px){
+    .icon #E {
+        margin-top: 10%;
+    }
+
+    #theme {
+        height: 5vh;
+        margin-right: -20px;
+    }
+
+    #mode{
+        height: 5vh;
+    }
+
+    .icon {
+        width: 20vh;
+    }
+}
+
+@media(max-height: 401px){
+    .icon #E {
+        margin-top: 10%;
+    }
+
+    #theme {
+        height: 7vh;
+        margin-right: -9px;
+    }
+
+    #mode{
+        height: 7vh;
+    }
+
+    .icon {
+        width: 24vh;
+    }
+
+    .icon #icon{
+        width: 6vw;
+    }
+
+    h1{
+        font-size: 1.3em;
+        height: 8vh;
+    }
+}
+
+
+
+.visable{
+    left: 0px;
+    transition: all 1s 0.5s;
+}
+
+.switch{
+    left: -1135px;
+    transition: all 3s 0.9s;
+}

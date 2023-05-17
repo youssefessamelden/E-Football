@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Football</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@600&family=Sigmar&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/pes.css">
+    <link rel="icon" href="static/images/M9YCFiMI.webp">
+</head>
+<body>
+    <!-- ///////////////////////scroll//////////// -->
+    <button class="scroll"> UP</button>
+
+    <!-- ////////////////start of customize////////////////// -->
+    <div class="custmozebutton visable">
+        <button>Custmize</button>
+        <span><i class="fa-sharp fa-solid fa-palette"></i></span>
+    </div>
+    <div class="custmize switch">
+        <div class="customize-pa">
+            <div class="head">
+                <span class="cust-sp">E-Football</span>
+                <span id="closecustomize"><i onclick="closecustomize()"   class="fa-solid fa-xmark"></i></span>   
+            </div>
+            <p class="customize-p">Use the template as-is or try different colors and fonts from the options below.</p>
+            <div class="colordefult">
+                <span class="customize-p2">Try Other Colors</span>
+                <button class="defult">Default</button>
+            </div>
+            <button class="default-color">
+                <span>DEFAULT COLORS</span>
+            </button>
+
+            <div class="boxs">
+                <div class="boxcolor-2 box1">
+                    <button class="color"></button>
+                    <button class="color"></button>
+                    <button class="color"></button>
+                    <button class="color"></button>
+                    <button class="color"></button>
+                </div>
+
+                <div class="boxcolor-2 box2">
+                    <button class="color"></button>
+                    <button class="color"></button>
+                    <button class="color"></button>
+                    <button class="color"></button>
+                    <button class="color"></button>
+                </div>
+
+                <div class="boxcolor-2 box3">
+                    <button class="color"></button>
+                    <button class="color"></button>
+                    <button class="color"></button>
+                    <button class="color"></button>
+                    <button class="color"></button>
+                </div>
+
+                <div class="boxcolor-2 box4">
+                    <button class="color"></button>
+                    <button class="color"></button>
+                    <button class="color"></button>
+                    <button class="color"></button>
+                    <button class="color"></button>
+                </div>
+
+                <div class="boxcolor-2 box5"> 
+                    <button class="color"></button>
+                    <button class="color"></button>
+                    <button class="color"></button>
+                    <button class="color"></button>
+                    <button class="color"></button>
+                </div>
+
+                <div class="boxcolor-2 box6">
+                    <button class="color"></button>
+                    <button class="color"></button>
+                    <button class="color"></button>
+                    <button class="color"></button>
+                    <button class="color"></button>
+                </div>
+
+                <div class="boxcolor-2 box7">
+                    <button class="color"></button>
+                    <button class="color"></button>
+                    <button class="color"></button>
+                    <button class="color"></button>
+                    <button class="color"></button>
+                </div>
+
+                <div class="boxcolor-2 box8">
+                    <button class="color"></button>
+                    <button class="color"></button>
+                    <button class="color"></button>
+                    <button class="color"></button>
+                    <button class="color"></button>
+                </div>
+
+                <div class="boxcolor-2 box9"> 
+                    <button class="color"></button>
+                    <button class="color"></button>
+                    <button class="color"></button>
+                    <button class="color"></button>
+                    <button class="color"></button>
+                </div>
+
+                <div class="boxcolor-2 box10">
+                    <button class="color"></button>
+                    <button class="color"></button>
+                    <button class="color"></button>
+                    <button class="color"></button>
+                    <button class="color"></button>
+                </div>
+
+                <div class="boxcolor-2 box11">
+                    <button class="color"></button>
+                    <button class="color"></button>
+                    <button class="color"></button>
+                    <button class="color"></button>
+                    <button class="color"></button>
+                </div>
+                
+                <div class="boxcolor-2 box12">
+                    <button class="color"></button>
+                    <button class="color"></button>
+                    <button class="color"></button>
+                    <button class="color"></button>
+                    <button class="color"></button>
+                </div>
+
+            </div>
+            <div class="font">
+                <div class="fonthead">
+                    <span class="try">Try Other Fonts</span>
+                    <button>Default</button> 
+                </div>
+                
+                <div class="popp">
+                    <button>Poppins/Poppins</button>
+                </div>
+
+                <div class="fontboxs">
+                    <button class="font1">Aa</button>
+                    <button class="font1">Aa</button>
+                    <button class="font2">Aa</button>
+                    <button class="font2">Aa</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ////////////////end of customize//////////// -->
+    <div class="header">
+        <div class="icon">
+            <img id="icon" src="https://e-football-dl.konami.net/img/efootball_open_2023/favicon.ico" alt="">
+            <span id="E">E-Football</span>
+        </div>
+
+        <h1>pes</h1>
+
+        <button id="theme">dark mode</button>
+        <button id="mode">white mode</button>
+    </div>
+
+    <div class="nav">
+        <li id="ser"><a href="#series">series</a></li>
+
+        <div class="menues">
+            <button id="btn">pes menues</button>
+
+            <ul class="menue hide" id="ul-list" >
+                <li class="click"><a href="#pes-6">pes 6</a></li>
+                <li class="click"><a href="#pes-16">pes 16</a></li>
+                <li class="click"><a href="#pes-17">pes 17</a></li>
+                <li class="click"><a href="#pes-18">pes 18</a></li>
+                <li class="click"><a href="#pes-20">pes 20</a></li>
+                <li class="click"><a href="#22">EFootball 22</a></li>
+                <li class="click"><a href="#23">EFootball 23</a></li>
+            </ul>
+        </div>
+
+        <div class="goals">
+            <button id="ps">pes 17 goals</button>
+
+            <ul id="goals">
+                <li class="click-2"><a href="#bsg">best goals</a></li>
+                <li class="click-2"><a href="#fgo">foul goals</a></li>
+                <li class="click-2"><a href="#fug">funny goals</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <iframe class="background" src="https://www.youtube.com/embed/27Fa0aH2Pgg" title="YouTube video player" frameborder="0"  autoplay allowfullscreen></iframe>
+
+    <section class="section">
+
+    <div class="parg">
+
+        <div class="p1">
+            <p>Pro Evolution Soccer series traces its roots to Goal Storm (also known as World Soccer Winning Eleven in Japan), The game was developed by Konami Computer Entertainment Tokyo and was released in 1996.</p> 
+    
+            <p>The first Winning Eleven game, without the World Soccer prefix, was J.League Jikkyou Winning Eleven which was released only in Japan for the PlayStation in 1995, and featured only the 14 clubs that played in 1995 J.League.</p>
+    
+            <p>The following three games in the series were also produced by Konami Computer Entertainment Tokyo and they were released under the name of ISS Pro for the European market and Winning Eleven for the rest of the world.</p>
+    
+            <p>Every game in this series was released on the PlayStation.</p>
+    
+            <p>you can find all pes series in the next link 
+        </div>
+        <button class="butn"><a class="a" href="https://en.wikipedia.org/wiki/Pro_Evolution_Soccer#Series_overview" id="series" target="blank" class="a1" title="enter the link to see pes series">pes series</a></button></p>
+    </div>
+
+    <hr class="hr">
+
+    <h2 class="h2" id="menu">pes menus</h2>
+
+    <p class="p2">pes has many menus,i will show many pes menu </p>
+
+    <h3 class="h3" id="pes-6">pes 6 menu</h3>
+
+    <div class="div">
+        <img class="img" src="https://i.ytimg.com/vi/ciuP57jKTFo/maxresdefault.jpg" alt="">
+
+        <img class="img" src="https://pbs.twimg.com/media/DSYSMARXkAAn0qn.jpg" alt="">
+    </div>
+
+    <hr class="hr">  
+
+    <h3 class="h3" id="pes-16">pes 16 menu</h3>
+
+    <div class="div">
+        <img class="img" src="https://i.ytimg.com/vi/Rbz8_e0Jvu8/maxresdefault.jpg" alt="">
+
+        <img class="img" src="https://i.pinimg.com/originals/ed/33/4d/ed334dc5121913cfab6a9803213ac2b8.jpg" alt="">
+
+        <img class="img" src="https://i.ytimg.com/vi/QsDxgQFKfNs/maxresdefault.jpg" alt="">
+    </div>
+
+    <hr class="hr">
+
+    <h3 class="h3" id="pes-17">pes 17 menu</h3>
+
+    <div class="div">
+        <img class="img" src="https://cramgaming.com/wp-content/uploads/2016/09/pes-2017-1.jpg" alt="">
+
+        <img class="img" src="https://i.ytimg.com/vi/vCaxGBAx7jM/maxresdefault.jpg" alt="">
+
+        <img class="img" src="https://www.gamereactor.eu/media/48/_1864873.png" alt="">
+
+        <img class="img" src="https://1.bp.blogspot.com/-Owp2l0_oY2Y/Xtwe0Ar646I/AAAAAAAAGhE/FArMVyQX0BQx2BvORt-HCi6aJ1vJzyH4QCLcBGAsYHQ/s1600/%25D8%25AA%25D8%25AD%25D9%2585%25D9%258A%25D9%2584-%25D8%25A8%25D9%258A%25D8%25B3-pes-2017-%25D8%25B9%25D9%2584%25D9%2589-%25D8%25A7%25D9%2584%25D9%2583%25D9%2585%25D8%25A8%25D9%258A%25D9%2588%25D8%25AA%25D8%25B1-%25D8%25A8%25D8%25AD%25D8%25AC%25D9%2585-%25D8%25B5%25D8%25BA%25D9%258A%25D8%25B1-%25D9%2588%25D8%25A8%25D8%25AF%25D9%2588%25D9%2586-%25D8%25AA%25D8%25AA%25D8%25A8%25D9%258A%25D8%25AA.png" alt="">
+    </div>   
+
+    <hr class="hr">
+
+    <h3 class="h3" id="pes-18">pes 18 menu</h3>
+
+    <div class="div"> 
+        <img class="img" src="https://3.bp.blogspot.com/-aQfklud79vU/We1cRNgJhZI/AAAAAAAAFVE/evbGXn8DWuIY-8yYS_vsWN51nZ_F7HgQgCLcBGAs/s1600/Hawke%2Bmeny%2BMods%2B2.png" alt="">
+    </div>  
+
+    <hr class="hr">
+
+    <h3 class="h4" id="pes-20">pes 20 menu</h3>
+
+    <div class="div">
+        <img class="img" src="https://1.bp.blogspot.com/-1bOFYlY9sKk/XUK-BIngG-I/AAAAAAAAECE/8uKqUr27wSwz4-cMpRYg3i5nQDQLIdyHwCLcBGAs/s1600/5-Menus-For-PES20-Demo.jpg" alt="">
+
+        <img class="img" src="https://preview.redd.it/k4gby47qz3431.jpg?auto=webp&s=b9103f4140ca1f286460c5b2ca576d8535e37caf" alt="">
+
+        <img class="img" src="https://i.ytimg.com/vi/rVTSWYa6mb4/maxresdefault.jpg" alt="">
+
+    </div>
+
+    <hr class="hr">
+
+    <h3 class="h4" id="22">EFootball 22 menu</h3>
+
+    <div class="div">
+        <img class="img" src="https://www.nextgenbase.com/files/2021/09/19563dd9475ca6a11a23fb72c2ad38ac.jpg" alt="">
+
+        <img class="img" src="https://www.operationsports.com/wp-content/uploads/2021/10/eFootball-2022_20210930192307-scaled.jpg" alt="">
+
+        <img class="img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1y7c4Cle8bSViqgbxcBhGmssm1YZs7nKL2A&usqp=CAU" alt="">
+
+        <img class="img" src="https://media-assets-ggwp.s3.ap-southeast-1.amazonaws.com/2021/10/impresi-efootball-2022-1.jpg" alt="">
+
+        <img class="img" src="https://images.ole.com.ar/2021/10/06/iJ54Onvc5_720x0__1.jpg" alt="">
+
+    </div>
+
+    <hr class="hr">
+
+    <h3 class="h4" id="23">EFootball 23 menu</h3>
+
+    <div class="div">
+        <img class="img" src="https://i.blogs.es/37ea40/efootball-2023-ps5-ps4-xbox-pc/1366_2000.jpeg" alt="">
+
+        <img class="img" src="https://mag.cafebazaar.ir/wp-content/uploads/2022/09/pes-2023-tips-4.jpg" alt="">
+
+        <img class="img" src="https://ap.cdnki.com/r_huong-dan-da-pes-2023-mobile---7be9a0a0ee762bbca80691251cb031e0.webp" alt="">
+
+        <img class="img" src="https://img.apkxi.com/wp-content/uploads/2022/08/eFootball-pes-2023-7-1660525738.jpeg" alt="">
+
+        <img class="img" src="https://mag.cafebazaar.ir/wp-content/uploads/2022/09/pes-2023-tips-3.jpg" alt="">
+
+        <img class="img" src="http://store.donanimhaber.com/ab/c9/02/abc9026e562fd8059854d29ed5aba78b.jpeg" alt="">
+
+    </div>
+
+    <hr class="hr">
+
+    <h2 class="h2" id="pgo">pes 17 goals </h2>
+
+    <h3 class="h3" id="bsg">best goals</h3>
+
+    <div class="div">
+        <iframe class="ifr" src="https://www.youtube.com/embed/yHuNKU70zhA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <iframe class="ifr" src="https://www.youtube.com/embed/tKdBPhzi-BI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <hr class="hr">
+
+    <h3 class="h3" id="fgo">foul gouls</h3>
+
+    <div class="div">
+        <iframe class="ifr-2" src="https://www.youtube.com/embed/V1OTxnFO4RU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <hr class="hr">
+
+    <div class="div">
+
+        <h3 class="h3" id="fug">funny goals</h3>
+
+        <iframe class="ifr-2" src="https://www.youtube.com/embed/RDHSesyPI3E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>    
+    </section>
+
+    <script src="static/js/jquery-3.6.4.min.js"></script>
+    <!-- <script src="static/js/pes.js"></script> -->
+    <script src="static/js/text.js"></script>
+</body>
+</html>
