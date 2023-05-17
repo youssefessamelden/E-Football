@@ -1217,11 +1217,11 @@ ul li a {
 
     .h2{
         width: 58vw;
-        font-size: 2.87em;
+        font-size: 2em;
     }
 
     .h3{
-        width: 42vw;
+        width: 45vw;
         padding: 10px 0px;
         font-size: 2em;
     }
@@ -1229,7 +1229,7 @@ ul li a {
     .h4{
         width: 64vw;
         padding: 10px 0px;
-        font-size: 2em;
+        font-size: 1.5em;
     }
 
     .img{
