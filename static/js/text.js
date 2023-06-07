@@ -10,7 +10,7 @@ $('#goals li').click(function(){
     $('#goals').hide();
 })
 
-$('.menue li').click(function(){
+$('.menue li a').click(function(){
     $('.menue').hide();
 })
 ////////////////////////////////////////////////////////////////
